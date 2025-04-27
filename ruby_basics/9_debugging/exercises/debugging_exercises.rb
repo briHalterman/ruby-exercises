@@ -1,3 +1,5 @@
+require 'pry-byebug'
+
 # First, we're going to practice reading the Stack Trace
 # Don't look at this method prior to running the test
 # Type 'rspec' into the terminal to run Rspec
@@ -53,7 +55,11 @@ end
 # Once you find the error, fix it and get the test to pass
 
 def yell_greeting(string)
+  # binding.pry
   name = string
-  name = name.downcase
+  # binding.pry
+  name = name.upcase
+  # binding.pry
   greeting = "WASSAP, #{name}!"
+  # binding.pry
 end
